@@ -4,9 +4,12 @@
     </head>
     <body>
         <script>
-            var x=parseInt(prompt("Enter number: "));
-            var fact=Factorial(x);
+            for (let x = 1; x<=10; x++){
+                for (let i = 1; i<=10; i++) {
+                    document.write(x*i, "----");
+                }
+                document.write("<br><br>");
+            }
         </script>
-        <input type="button" value="Click to get factorial" onclick="document.write('Factorial is: ',fact)">
     </body>
 </html>
