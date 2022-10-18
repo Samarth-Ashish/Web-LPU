@@ -1,5 +1,22 @@
 <html>
     <head>
         <title>Factorial of number</title>
+        <script>
+            function Factorial(number){
+                if (number==1){
+                    return 1;
+                }
+                else{
+                    return number*Factorial(number-1);
+                }
+            }
+        </script>
     </head>
+    <body>
+        <script>
+            var x=parseInt(prompt("Enter number: "));
+            var fact=Factorial(x);
+        </script>
+        <input type="button" value="Click to get factorial" onclick="document.write('Factorial is: ',fact)">
+    </body>
 </html>
