@@ -1,0 +1,23 @@
+<html>
+    <head>
+        <title>Table of number</title>
+    </head>
+    <body>
+        <script>
+            var x =parseInt(prompt("Enter number: "));
+            var z=x;
+            var y=0;
+            while (x>0){
+                y=y*10+(x%10);
+                x=x/10;
+            }
+            if (z==y){
+                document.write("armstrong num");
+            }
+            else{
+                document.write("not armstreong");
+                
+            }
+        </script>
+    </body>
+</html>

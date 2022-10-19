@@ -1,0 +1,24 @@
+<html>
+    <head>
+        <title>Table of number</title>
+    </head>
+    <body>
+        <script>
+            var x =parseInt(prompt("Enter number: "));
+            var z=x;
+            var sum=0;
+            while (x>0){
+                sum=sum+((x%10)**3);
+                x=x/10;
+            }
+            
+            if (z==sum){
+                document.write("armstrong num");
+            }
+            else{
+                document.write("not armstrong");
+                
+            }
+        </script>
+    </body>
+</html>
