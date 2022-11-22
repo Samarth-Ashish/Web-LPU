@@ -1,24 +1,26 @@
 <html>
     <head>
-        <title>Table of number</title>
+        <title>Reverse num</title>
     </head>
     <body>
         <script>
-            var x =parseInt(prompt("Enter number: "));
-            var z=x;
+
+            var num = parseInt(prompt("Enter number: "));
+            var N=num;
             var sum=0;
-            while (x>0){
-                sum=sum+((x%10)**3);
-                x=x/10;
+            var remainder;
+            
+            while (N!=0){
+                remainder = N%10;
+                N = parseInt(N/10);
+                sum += (remainder*remainder*remainder);
             }
             
-            if (z==sum){
-                document.write("armstrong num");
-            }
-            else{
-                document.write("not armstrong");
-                
-            }
+            if (sum==num)
+                alert(num+" is an armstrong num");
+            else
+                alert(num+" is not an armstrong num");
+
         </script>
     </body>
 </html>

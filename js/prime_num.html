@@ -1,0 +1,25 @@
+<html>
+    <head>
+        <title>Prime num</title>
+    </head>
+    <body>
+        <script>
+
+            var num = parseInt(prompt("Enter number: "));
+            var num_is_prime=1;
+            
+            for (var i=2; i<num; i++){
+                if (num%i==0){
+                    num_is_prime=0;
+                    break;
+                }
+            }
+
+            if (num_is_prime)
+                alert(num+" is prime.");
+            else
+                alert(num+" is not prime.");
+
+        </script>
+    </body>
+</html>
