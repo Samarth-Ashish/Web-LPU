@@ -5,14 +5,15 @@
             
             var initial_principal = parseInt(prompt("Enter the initial pricipal amount: "));
             var rate = parseInt(prompt("Enter rate of interest: "));
-            var n = parseInt(prompt("Enter number of times interest is compounded per year: "));
             var time = parseInt(prompt("Enter time (in years): "));
+            var n = parseInt(prompt("Enter number of times interest is compounded per year (compounding interval): "));
 
-            var final_principal = initial_principal * ( (1+(rate)/(100*n))**(n*time) );
-            
+            var final_principal = initial_principal * ( (1 + (rate)/(100*n) )**(n*time) );
+            var compound_interest = final_principal - initial_principal;
+
             document.write("Inital principal amount = " + initial_principal + "<br>");
             document.write("Final  principal amount = P * [1+ (R/n)% ]^nT = " + final_principal + "<br>");
-            document.write("Compound interest = " + (final_principal-initial_principal) );
+            document.write("Compound interest = " + compound_interest );
 
         </script>
     </body>
