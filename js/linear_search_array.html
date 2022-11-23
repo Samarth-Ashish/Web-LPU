@@ -1,0 +1,33 @@
+<html>
+    <head>
+        <title>Sum of digits</title>
+    </head>
+    <body>
+        <script>
+
+            var size = parseInt(prompt("Enter size of array: "));
+            var array = new Array(size);
+            
+            for (var i=0; i<size; i++){
+                array[i]=parseInt(prompt(i+1+" Enter num: "));
+            }
+
+            var to_find = parseInt(prompt("Enter number to find: "));
+            var found=0;
+
+            for (var i=0; i<size; i++){
+                if (array[i]==to_find){
+                    found=1;
+                    break;
+                }
+            }
+
+            if (found)
+                document.write(to_find+" IS present in array");
+            else
+                document.write(to_find+" IS NOT present in array");
+
+
+        </script>
+    </body>
+</html>

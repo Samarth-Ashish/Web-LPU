@@ -1,0 +1,20 @@
+<html>
+    <head>
+        <title>Sum of digits</title>
+    </head>
+    <body>
+        <script>
+
+            var size = parseInt(prompt("Enter size of array: "));
+            var array = new Array(size);
+            var sum=0;
+            
+            for (var i=0; i<size; i++){
+                array[i]=parseInt(prompt(i+1+" Enter num: "));
+                sum+=array[i];
+            }
+                        alert("Sum of numbers in array : "+sum);
+
+        </script>
+    </body>
+</html>
