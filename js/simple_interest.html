@@ -3,10 +3,16 @@
     <body>
         <script>
             
-            var principal_balance=parseInt(prompt("Enter the initial pricipal amount"));
+            var initial_principal = parseInt(prompt("Enter the initial pricipal amount: "));
+            var rate = parseInt(prompt("Enter annual rate of simple interest : "));
+            var time = parseInt(prompt("Enter time (in years): "));
 
-            
+            var simple_interest = initial_principal * rate * time / 100;
+            var final_principal = initial_principal + simple_interest ;
 
+            document.write("Inital principal amount = " + initial_principal + "<br>");
+            document.write("Final principal amount = Initial principal amount + simple interest = " + final_principal + "<br>");
+            document.write("Simple Interest = P * R * T / 100 = " + simple_interest + "<br>");
 
         </script>
     </body>
